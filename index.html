@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+<body>
+  <!-- QUIZ APP HEADER -->
+  <header role="banner" class="quiz-form-header">
+    <h1 class="quiz-title"><img src="url.img/marioThinking.png" alt="image of mario, looking up as if in deep thought">Quiz App</h1>
+  </header>
+
+  <!-- START PAGE CONTAINER -->
+  <section class="start-page">
+    <h3>Welcome! ~(˘▾˘~)</h3>
+    <p>This quiz will cover some of the coolest facts about the video gaming industry. Hope you learn something new, good luck and enjoy! Click "Start Quiz" button below to start</p>
+    <button role="button" class="start-quiz-button">Start Quiz</button>
+  </section>
+
+  <!-- END OF QUIZ RESULTS PAGE CONTAINER -->
+  <div class="resultsPage"></div>
+
+  <!-- USER FEEDBACK PAGE CONTAINER -->
+  <div role="dialog" id="feedbackPage" class="feedback">
+    <div class="userFeedback-content">
+    </div>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <!-- TRACKER ELEMENTS FOR QUESTION NUMBER AND SCORE -->
+  <div role="main" class="main-container hide">
+    <!-- QUIZ APP FORM -->
+    <!-- DISPLAYS CURRENT QUESTION -->
+    <!-- DISPLAYS POSSIBLE ANSWERS -->
+    <!-- <label for="answerOption0">${STORE[questionNumber].answer[0]}</label><br> -->
+    <form action="index.html" method="POST" class="form-content" role="form">
+      <section class="tracker">tracker ELEMENTS</section>
+      <h2 class="current-qusetion"></h2>
+      <legend>Please Select an Answer:</legend>
+      <fieldset class="possible-answers" role="radiogroup"></fieldset>
+      
+      <button type="submit" class="submit-button" role="button" >Submit Answer</button>  <!-- onclick="this.disabled = true" -->
+    </form>
+  </div>
+
+  <!-- JS LINKS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

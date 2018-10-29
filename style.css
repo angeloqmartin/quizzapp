@@ -1,0 +1,278 @@
+* {
+  background-color:#f4f4f4;
+  box-sizing: border-box;
+}
+
+body {
+  position:relative;
+  font-size: 1.5em;
+  background-image: url("https://i.pinimg.com/originals/bc/93/2a/bc932a8df9c20fa553a2823c360b3cdc.png");
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-position: center;
+  overflow: auto;
+}
+
+/*------------------------------------------
+        Start Page
+------------------------------------------*/
+.hide {
+  display: none;
+}
+
+.start-page {
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.start-quiz-button {
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: green;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/*------------------------------------------
+        Header Navigation-Bar
+------------------------------------------*/
+.quiz-form-header {
+  border-bottom: solid black 1px;
+  margin-bottom: 100px;
+}
+
+.quiz-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0 10px 0;
+}
+
+.quiz-title img{
+  height: 60px;
+  width: 60px;
+}
+
+/*------------------------------------------
+        Main Quiz App container
+------------------------------------------*/
+.main-container{
+  width: 90%;
+  max-width: 800px;
+  margin:auto;
+}
+
+/*------------------------------------------
+        Tracker
+------------------------------------------*/
+.tracker {
+  font-size: 1.2em;
+  margin: 0  10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tracker p{
+  font-size: 1em;
+}
+
+.question-tracker {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding:0;
+}
+
+.score-tracker {
+  color: red;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------------
+        Quiz App form container
+------------------------------------------*/
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 20px;
+  padding: 0 10%;
+}
+
+.form-content img{
+  width: 50px;
+  height: 50px;
+}
+
+.form-content legend{
+  margin-bottom: 25px;
+}
+
+/*------------------------------------------
+        Quiz App Qusetion
+------------------------------------------*/
+.current-qusetion {
+  text-align: center;
+  height: 110px;
+  border-bottom: solid black 1px;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+.current-qusetion{
+  margin:0;
+
+}
+
+/*------------------------------------------
+        Quiz App Answers
+------------------------------------------*/
+fieldset {
+  border: none;
+}
+
+.possible-answers input{
+  margin-right: 5px;
+}
+
+/*------------------------------------------
+        Quiz App Control Buttons
+------------------------------------------*/
+.submit-button {
+  font-weight: bolder;
+  border-radius:10px;
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+  background-color: #2E2EFF;
+  text-align: center;
+}
+
+button:hover{
+  background-color: orange;
+}
+
+/*------------------------------------------
+        Feedback Page
+------------------------------------------*/
+.feedback {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.userFeedback-content {
+  margin: 15% auto; 
+  padding: 20px;
+  width: 80%; 
+}
+
+.userFeedback-content > p:first-child{
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: black solid 3px;
+}
+
+.userFeedback-content > p {
+  font-size: 0.85em;
+}
+
+.nextQuestion {
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: green;
+  border-radius: 10px;
+  margin: auto;
+  width: 100%;
+}
+
+/*------------------------------------------
+        End of Quiz Results 
+------------------------------------------*/
+.resultsContent {
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.resultsContent img { 
+  width: 350px;
+  height: 300px;
+}
+  
+.restart-quiz-button {
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: green;
+  border-radius: 10px;
+  margin: 20px;
+  }
+
+/*------------------------------------------
+                Media Queries
+------------------------------------------*/
+@media (min-width: 769px) {
+  .start-page {
+    width: 50%;
+  }
+
+  .quiz-title {
+    font-size:3em;
+    width: 70%;
+  }
+
+  .quiz-title img{
+    height: 90px;
+    width: 90px;
+  }
+
+  .question-tracker{
+    font-size:1.2em;
+  }
+
+  .tracker {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .submit-button {
+    width: 40%;
+    float:right;
+   }
+
+  .userFeedback-content {
+    width: 60%; 
+  }
+
+  .main-container {
+    width: 80%;
+  }  
+}
+
+@media (min-width: 1028px) {
+  .userFeedback-content {
+    width: 40%; 
+  }
+  .userFeedback-content > p {
+    font-size: 1em;
+  }
+  .current-qusetion {
+    font-size: 1.3em;
+  }
+}
