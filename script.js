@@ -91,7 +91,7 @@ function renderQuizAppQuestion() {
 function possibleAnswers() {
   let answerHTML = ``;
   for(let i = 0; i < STORE[questionNumber].answer.length; ++i) {
-  answerHTML += `<input type="radio" role="radio "name="answer" id="answer${i}" value="${STORE[questionNumber].answer[i]}" required><label for="answer${i}">${STORE[questionNumber].answer[i]}</label><br><br>`;
+  answerHTML += `<input type="radio" role="radio" name="answer" id="answer${i}" value="${STORE[questionNumber].answer[i]}" aria-checked="false" required><label for="answer${i}">${STORE[questionNumber].answer[i]}</label><br><br>`;
   }
   return answerHTML;
 };
